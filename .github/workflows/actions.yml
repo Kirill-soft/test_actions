@@ -20,3 +20,5 @@ jobs:
           VALIDATE_MARKDOWN: true
           VALIDATE_YAML: true
           VALIDATE_JSON: true
+          FAIL_ON_ERROR: true
+
