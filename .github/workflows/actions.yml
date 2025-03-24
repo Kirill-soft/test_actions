@@ -1,14 +1,6 @@
 name: Super Linter
 
-on:
-  push:
-    branches:
-      - main
-      - master
-  pull_request:
-    branches:
-      - main
-      - master
+on: push
 
 jobs:
   lint:
@@ -20,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Super Linter
-        uses: super-linter/super-linter@v5
+        uses: super-linter/super-linter@v7.3.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BRANCH: main
