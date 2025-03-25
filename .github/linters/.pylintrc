@@ -1,5 +1,21 @@
+[MASTER]
+ignore=.git,__pycache__,.vscode
+jobs=1
+
 [MESSAGES CONTROL]
 disable=
-    missing-docstring,
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
     too-few-public-methods
-max-line-length=88
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=5
+max-attributes=10
+max-locals=15
+max-returns=6
+max-branches=12
+max-statements=50
