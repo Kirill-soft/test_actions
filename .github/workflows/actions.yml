@@ -22,4 +22,4 @@ jobs:
           VALIDATE_JSON: true
           FAIL_ON_ERROR: true
           LINTER_RULES_PATH: .github/linters
-          PYTHON_PYLINT_CONFIG_FILE: .github/linters/.pylintrc
+
