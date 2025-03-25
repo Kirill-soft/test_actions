@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Run Super Linter
         uses: super-linter/super-linter@v7.3.0
@@ -21,4 +21,6 @@ jobs:
           VALIDATE_YAML: true
           VALIDATE_JSON: true
           FAIL_ON_ERROR: true
-
+          LINTER_RULES_PATH: .github/linters
+          PYTHON_BLACK_CONFIG_FILE: .github/linters/pyproject.toml
+          PYTHON_PYLINT_CONFIG_FILE: .github/linters/.pylintrc
