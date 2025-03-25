@@ -1,9 +1,12 @@
-def hello():
-  print("hi")
+""" Этот модуль содержит функции приветствия. """
 
+def hello():
+    """Выводит приветствие."""
+    print("hi")
 
 def bye():
-  print('bye')
+    """Выводит прощание."""
+    print("bye")
 
-
-print(hello())
+hello()
+bye()
